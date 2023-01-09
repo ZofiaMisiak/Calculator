@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator walut</title>
+    <link rel="icon" href="obrazek/icon.png">
+    <meta property="og:image" content="images/share.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+
+</head>
+
+<body class="body">
+    <form class="form js-form">
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">CURRENCY CALCULATOR</legend>
+            <p>
+                <label>
+                    <span class="form__labelText">
+                        Amount in PLN (zł):*
+                    </span>
+                    <input class="form__field js-amountPLN" name="amount" placeholder="Amount in PLN (zł)" type="number"
+                        min="0" step="0.01" required autofocus>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <span class="form__labelText">
+                        Choose currency: *
+                    </span>
+                    <select class="form__field js-currencySelection" name="currencySelection">
+                        <option value="EUR">Euro [EUR]</option>
+                        <option value="USD">American dolar [USD]</option>
+                        <option value="CHF">Swiss franc [CHF]</option>
+                        <option value="GBP">Pound sterling [GBP]</option>
+
+                    </select>
+                </label>
+            </p>
+            <p class="form__result">Result of conversion: <strong class="js-result">0</strong> </p>
+            <p>
+                <button class="form__button">Count!</button>
+            </p>
+            <p class="form__additionalInformation"> * Required field </p>
+            <p class="form__additionalInformation"> Exchange rate from 08. 01. 2023</p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
