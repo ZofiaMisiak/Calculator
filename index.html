@@ -20,40 +20,39 @@
 </head>
 
 <body class="body">
-    <form class="form js-form">
-        <fieldset class="form__fieldset">
-            <legend class="form__legend">CURRENCY CALCULATOR</legend>
-            <p>
-                <label>
-                    <span class="form__labelText">
-                        Amount in PLN (zł):*
-                    </span>
-                    <input class="form__field js-amountPLN" name="amount" placeholder="Amount in PLN (zł)" type="number"
-                        min="0" step="0.01" required autofocus>
-                </label>
-            </p>
-            <p>
-                <label>
-                    <span class="form__labelText">
-                        Choose currency: *
-                    </span>
-                    <select class="form__field js-currencySelection" name="currencySelection">
-                        <option value="EUR">Euro [EUR]</option>
-                        <option value="USD">American dolar [USD]</option>
-                        <option value="CHF">Swiss franc [CHF]</option>
-                        <option value="GBP">Pound sterling [GBP]</option>
+  <form class="form js-form">
+      <fieldset class="form__fieldset">
+          <legend class="form__legend">CURRENCY CALCULATOR</legend>
+          <p>
+              <label>
+                  <span class="form__labelText">
+                      Amount in PLN (zł):*
+                  </span>
+                  <input class="form__field js-amountPLN" name="amount" placeholder="Amount in PLN (zł)" type="number"
+                      min="0" step="0.01" required autofocus>
+              </label>
+          </p>
+          <p>
+              <label>
+                  <span class="form__labelText">
+                      Choose currency: *
+                  </span>
+                  <select class="form__field js-currencySelection" name="currencySelection">
+                      <option value="EUR">Euro [EUR]</option>
+                      <option value="USD">American dolar [USD]</option>
+                      <option value="CHF">Swiss franc [CHF]</option>
+                      <option value="GBP">Pound sterling [GBP]</option>
 
-                    </select>
-                </label>
-            </p>
-            <p class="form__result">Result of conversion: <strong class="js-result">0</strong> </p>
-            <p>
-                <button class="form__button">Count!</button>
-            </p>
-            <p class="form__additionalInformation"> * Required field </p>
-            <p class="form__additionalInformation"> Exchange rate from 08. 01. 2023</p>
-        </fieldset>
-    </form>
+                  </select>
+              </label>
+          </p>
+          <p class="form__result">Result of conversion: <strong class="js-result">0</strong> </p>
+          <p>
+              <button class="form__button">Count!</button>
+          </p>
+          <p class="form__additionalInformation"> * Required field </p>
+          <p class="form__additionalInformation"> Exchange rate from 08. 01. 2023</p>
+      </fieldset>
+  </form>
 </body>
-
 </html>
